@@ -17,6 +17,9 @@
     "noFallthroughCasesInSwitch": true,
     "ignoreDeprecations": "6.0",
     "baseUrl": "./",
+    // Silences TypeScript 7.0 baseUrl deprecation warning.
+// Remove once we migrate away from baseUrl path aliases.
+"ignoreDeprecations": "6.0",
     "paths": {
       "@/*": ["src/*"]
     }
